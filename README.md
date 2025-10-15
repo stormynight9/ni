@@ -346,7 +346,7 @@ Before `ni` runs the command, it detects your `yarn.lock` / `pnpm-lock.yaml` / `
 PowerShell comes with a built-in alias `ni` for the `New-Item` cmdlet. To remove the alias in your current PowerShell session in favor of this package, use the following command:
 
 ```PowerShell
-'Remove-Item Alias:ni -Force -ErrorAction Ignore'
+Remove-Item Alias:ni -Force -ErrorAction Ignore
 ```
 
 If you want to persist the changes, you can add them to your PowerShell profile. The profile path is accessible within the `$profile` variable. The ps1 profile file can normally be found at
